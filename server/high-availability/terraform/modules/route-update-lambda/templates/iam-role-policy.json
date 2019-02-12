@@ -1,0 +1,23 @@
+{
+  "Statement":[
+    {
+      "Effect":"Allow",
+      "Action":[
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents",
+        "logs:PutMetricFilter",
+        "logs:PutRetentionPolicy",
+        "logs:GetLogEvents",
+        "logs:DeleteLogStream",
+        "ecs:Describe*",
+        "ecs:ListContainerInstances",
+        "ec2:Describe*",
+        "ec2:CreateRoute",
+        "ec2:DeleteRoute",
+        "lambda:*"
+      ],
+      "Resource":"*"
+    }
+  ]
+}

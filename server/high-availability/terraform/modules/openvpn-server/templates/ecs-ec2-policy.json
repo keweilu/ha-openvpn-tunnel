@@ -1,0 +1,31 @@
+{
+  "Statement":[
+    {
+      "Effect":"Allow",
+      "Action":[
+        "ecs:CreateCluster",
+        "ecs:DeregisterContainerInstance",
+        "ecs:DiscoverPollEndpoint",
+        "ecs:Poll",
+        "ecs:RegisterContainerInstance",
+        "ecs:StartTelemetrySession",
+        "ecs:UpdateContainerInstancesState",
+        "ecs:Submit*",
+        "ecr:GetAuthorizationToken",
+        "ecr:BatchCheckLayerAvailability",
+        "ecr:GetDownloadUrlForLayer",
+        "ecr:BatchGetImage",
+        "ec2:ModifyInstanceAttribute",
+        "ec2:AssociateAddress",
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents",
+        "logs:DescribeLogStreams",
+        "s3:Get*",
+        "s3:List*",
+        "cloudwatch:PutMetricData"
+      ],
+      "Resource":"*"
+    }
+  ]
+}
